@@ -1,0 +1,67 @@
+
+
+    /*section{
+        padding: 5em;
+    }
+    ::-webkit-input-placeholder { 
+      color: #fff;
+    }
+    ::-moz-placeholder { 
+      color: #fff;
+    }
+
+    .searchform{
+    	position: absolute;
+    	top:-10px;
+    	left: 1200px;
+    }
+
+    .search-focus {
+        background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat left;
+        border: 10px solid #fff;
+        outline: none;
+        background-size: 22px;
+        background-position: 13px;
+        border-radius: 50px;
+        width: 0px;
+        height: 0px;
+        padding: 25px;
+        transition: all .5s;
+    }
+    .search-focus:focus{
+        width: 300px;
+        padding-left: 50px;
+    }
+
+    /*.search-hover {
+        background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat left;
+        border: 10px solid #fff;
+        outline: none;
+        background-size: 22px;
+        background-position: 13px;
+        border-radius: 50px;
+        width: 0px;
+        height: 0px;
+        padding: 25px;
+        transition: all .5s;
+    }
+    .search-hover:hover{
+        width: 300px;
+        padding-left: 50px;
+    }
+
+.search-click {
+    position: absolute;
+    overflow: hidden;
+    height: 20px;
+}  
+.search-click input {
+    background: transparent;
+    border: 10px solid #fff;
+    outline: none;
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    left: 0%;
+    padding: 10px;
+}*/

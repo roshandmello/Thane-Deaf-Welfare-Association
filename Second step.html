@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Barber Shop Website Design - Easy Tutorials</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="clock.css">
+
+	<link rel="stylesheet" type="text/css" href="searchbox.css">
+
+	
+<!--	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins@display=swap" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+
+
+	<img src="tdwalogo.png" class="logo">
+
+<!-----------------------------------------CAROUSEL ----------------------------------------------------->
+
+<section id="banner">
+
+	<div class="carousel">
+		<div class="carousel-item">
+			<img src="vaibhav.jpg">
+			<h3>Vaibhav Ghasias<br>(President)</h3>
+
+		</div>
+		<div class="carousel-item">
+			<img src="Amol.jpg">
+			<h3>Amol Pagare<br>(Vice President)</h3>
+		</div>
+		<div class="carousel-item">
+			<img src="Raju.jpg">
+			<h3>Raju Kamatkar<br>(General Secretary)</h3>
+		</div>
+		<div class="carousel-item">
+			<img src="roshan.jpg">
+			<h3>Roshan D'mello<br>(Joint Secretary)</h3>
+		</div>
+		<div class="carousel-item">
+			<img src="sunil.jpg">
+			<h3>Sunil Dalvi<br>(Treasure)</h3>
+		</div>
+		<div class="carousel-item">
+			<img src="Rikin.jpg">
+			<h3>Rikin Shah<br>(Joint Treasure)</h3>
+		</div>
+	</div>
+</section>
+<!-----------------------------------------XXXXXXXXX ----------------------------------------------------->	
+	<div class="searchform">
+		<div class="container">
+    		<form>
+            <input type="text" name="" placeholder="search here...">
+    		</form>
+        </div>
+    </div>
+
+
+<!--	<div class="banner-text">
+			<div class="banner-btn">
+				<a href="#"><span></span>Find Out</a>
+				<a href="#"><span></span>Read More</a>
+			</div>-->
+
+<div id="sideNav">
+	<nav>
+
+	<ul class="home">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">PROJECT</a></li>
+			<li><a href="#">GALLERY</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="#">ABOUT</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+		<img src="imagemenu1.png" id="menu">
+</div>
+
+
+<!-----------------------------------------DIGITAL CLOCK --------------------------------------------->
+<div id="oneclock">
+	<div id="clock">
+		<div id="time">
+			<div><span id="hour">00</span><span>Hours</span></div>
+			<div><span id="minutes">00</span><span>Minutes</span></div>
+			<div><span id="seconds">00</span><span>Seconds</span></div>
+		</div>
+	</div>
+</div>
+
+
+<!-------------------------------------- xxxxxxxx----------------------------------------------------->
+
+<!-------------------------------------------------JAVASCRIPT----------------------------------------------------->
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ 
+
+<script type="text/javascript">
+	var menuBtn = document.getElementById("menuBtn")
+	var sideNav = document.getElementById("sideNav")
+	var menu = document.getElementById("menu")
+
+	sideNav.style.right = "-250px";	
+
+	menuBtn.onclick = function(){
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+			menu.src="exit1.png";
+		}
+		else{
+			sideNav.style.right = "-250px";
+			menu.src="imagemenu1.png";
+		}
+	}
+
+
+
+	function clock(){
+
+			var hours = document.getElementById('hour')
+			var minutes = document.getElementById('minutes')
+			var seconds = document.getElementById('seconds')
+
+			var hh = new Date().getHours();
+			var mm = new Date().getMinutes();
+			var ss = new Date().getSeconds();
+
+			hours.innerHTML = hh;
+			minutes.innerHTML = mm;
+			seconds.innerHTML = ss;
+
+		}
+
+		var interval = setInterval(clock, 1000);
+
+
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+    		$('.carousel').carousel();
+  		});
+	</script>
+</body>
+</html>
